@@ -18,7 +18,7 @@ This sample microservice application has been built using these technologies:
 - AngularJS (1.x)
 
 
-Understanding the Basics:
+### Understanding the Basics:
 
 The 3-tier architecture is composed of three primary layers, each with distinct responsibilities:sponsibilities:
 
@@ -49,7 +49,7 @@ The 3-tier architecture is composed of three primary layers, each with distinct 
 By isolating data-related operations, developers can optimize data access and storage mechanisms independently of the rest of the application.
 
 
-Benefits of 3-Tier Architecture:
+### Benefits of 3-Tier Architecture:
 
 1. Scalability:
    
@@ -94,15 +94,14 @@ Verify the installation:
 kubectl version --client
 ```
 
-The output would look like this
+The output would look like this,
 
 ![image](https://github.com/user-attachments/assets/223e9a45-66bf-4f20-8f7f-1fc439ba7797)
 
+
 2. eksctl: A command-line tool designed for working with EKS clusters, streamlining various tasks. The eksctl tool uses CloudFormation under the hood, creating one stack for the EKS master control plane and another stack for the worker nodes.
 
-Install and set up eksctl
-
-Download and extract the latest release of eksctl with the following command.
+Install and set up eksctl - Download and extract the latest release of eksctl with the following command.
 
 ```
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp &&
@@ -110,17 +109,18 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 sudo mv /tmp/eksctl /usr/local/bin
 ```
 
-You can check the eksctl version using
+You can check the eksctl version using,
 
 ```
 eksctl version
 ```
 
-Use [official documentation](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-eksctl.html) for eksctl installation on other OS
+Use [official documentation](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-eksctl.html) for eksctl installation on other OS.
 
-The output would look like this
+The output would look like this,
 
 ![image](https://github.com/user-attachments/assets/ea963b1c-4c7d-407a-b300-b930a44be52f)
+
 
 3. AWS CLI: A command-line interface for interacting with AWS services, including Amazon EKS. To install, update, and uninstall AWS CLI, follow the instructions in the AWS Command Line Interface User Guide. After installation, it is advisable to configure the AWS CLI using the guidelines outlined in the AWS Command Line Interface User Guide under “Quick configuration with aws configure.”
 
@@ -136,6 +136,7 @@ Use [official documentation]([https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-
 
 
 ### Steps:
+
 
 #### Step-1: Create an EKS Cluster
 
@@ -360,7 +361,7 @@ Add to cart the robots.
 
 
 
-==================================================================================================================
+==============================================================================================================
 
 
 
