@@ -314,8 +314,14 @@ helm install robot-shop --namespace robot-shop .
 
 4. Ensure all the pods are running if not troubleshoot the issues.
 
+```
+get pods -n robot-shop
+```
 
-#### Step 7: Create Ingress
+![2 1](https://github.com/user-attachments/assets/bc67ea59-b1ea-4ae7-a220-08a155399ada)
+
+
+#### Step 7: Create Ingress to expose for external users
 
 Goto,
 
@@ -325,67 +331,36 @@ cd /RobotShop-Project/EKS/helm
 ```
  kubectl apply -f ingress.yaml
  ```
+
 This will create a Load Balancer on the AWS console.
 
+![2 2](https://github.com/user-attachments/assets/e78e0aca-ab87-4dd1-bb07-ecfd6e5151f1)
+
+
+#### Step 8: ACcess the deployed application
 
 Paste the DNS-name on your favorite browser and access the application.
 
+![2 4](https://github.com/user-attachments/assets/1927d388-c6c4-40dc-b888-80123051c909)
+
+Dashboard of the application.
+
+![2 5](https://github.com/user-attachments/assets/6e03271b-4083-40fe-bb35-bc9101bab391)
 
 Get Register and login into the application.
 
-
-Rate the Artificial Intelligence.
-
+![2 6](https://github.com/user-attachments/assets/5ded073c-7577-4f25-a109-5bbd527613a3)
 
 Add to cart the robots.
 
-
-Checkout them.
-
-
-Select your Location and then calculate the price and confirm the order.
-
-
-Then place the Order.
-
-
-And pay the amount .
-
-
-Congratulations… Your Order has been Successfully placed.. :)
+![2 7](https://github.com/user-attachments/assets/be838a14-96d7-4109-b816-34e6108a26d7)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+==================================================================================================================
 
 
 
